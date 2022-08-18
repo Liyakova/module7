@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  margin-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input {
+  padding: 10px;
+  width: 40%;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+input:hover {
+  background-color: antiquewhite;
+  transition-duration: 2s;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+li {
+  background: #ddd6e8;
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: block;
+  padding: .4em .4em .4em .8em;
+  margin: .5em 0 .5em 2.5em;
+  background: #ddd6e8;
+}
+
+.crossed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+ul {
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5)
+}
+
+.logo {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.groseryList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.addButton {
+  padding: 10px;
+}
+
+.deleteButton {
+  padding: 10px;
+  background-color: rgb(93, 9, 9);
+  border: none;
+  color: #ddd6e8;
+  width: 200px;
+}
+
+.inputAdd {
+  width: 300px;
+}
+
+@media all and (max-width: 500px) {
+  .nav {
+    margin-top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .link {
+    margin: 10px;
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .logo {
+    width: 100%;
+  }
+  li {
+    margin-right: 10px;
   }
 }
